@@ -1,6 +1,6 @@
 # BurritoBuyer Chrome Extension
 
-A Chrome extension that converts online product prices into terms of your most "prized items".
+A Chrome extension that displays online product prices in terms of your most "prized items".
 
 ## Features
 
