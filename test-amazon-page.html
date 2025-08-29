@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Product Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product-container {
+            display: flex;
+            gap: 40px;
+            margin: 20px 0;
+        }
+        .product-image {
+            width: 400px;
+            height: 400px;
+            background: #f0f0f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #666;
+        }
+        .product-details {
+            flex: 1;
+        }
+        .product-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .a-price {
+            font-size: 28px;
+            color: #B12704;
+            margin: 20px 0;
+        }
+        .a-price-current {
+            font-weight: bold;
+        }
+        .product-features {
+            margin: 20px 0;
+        }
+        .product-features ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        .buy-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>Amazon Product Test Page</h1>
+    <p><strong>URL Path:</strong> /dp/B08N5WRWNW (simulated product detail page)</p>
+    
+    <div class="product-container">
+        <div class="product-image">
+            [Product Image]
+        </div>
+        
+        <div class="product-details">
+            <h2 class="product-title">Premium Wireless Bluetooth Headphones</h2>
+            
+            <div class="a-price a-text-price a-size-medium">
+                <span class="a-price-current">$89.99</span>
+            </div>
+            
+            <div class="product-features">
+                <h3>Product Features:</h3>
+                <ul>
+                    <li>Active Noise Cancellation</li>
+                    <li>30-hour battery life</li>
+                    <li>Premium sound quality</li>
+                    <li>Comfortable over-ear design</li>
+                </ul>
+            </div>
+            
+            <div class="buy-box">
+                <h3>Buy Now</h3>
+                <p>Price: <span class="a-price-current">$89.99</span></p>
+                <button style="background: #ff9900; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer;">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+    
+    <div style="margin-top: 40px; padding: 20px; background: #e8f4f8; border-radius: 8px;">
+        <h3>Test Instructions:</h3>
+        <ol>
+            <li>Load this page with the BurritoBuyer extension enabled</li>
+            <li>Open the extension popup and add a prized item (e.g., "Burrito" for $10.00)</li>
+            <li>Refresh this page or navigate to it</li>
+            <li>You should see "• 9 burritos" appear next to the $89.99 price</li>
+            <li>The conversion should be subtle and not interfere with the layout</li>
+        </ol>
+        <p><strong>Note:</strong> This page simulates the /dp/ URL structure that Amazon uses for product detail pages.</p>
+    </div>
+
+    <script>
+        // Simulate Amazon product page URL structure
+        if (window.location.pathname === '/test-amazon-page.html') {
+            // Update the URL to include /dp/ for testing
+            window.history.replaceState({}, '', '/dp/B08N5WRWNW/test-amazon-page.html');
+        }
+    </script>
+</body>
+</html>

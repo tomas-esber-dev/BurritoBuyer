@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "BurritoBuyer",
+  "version": "1.0",
+  "description": "Convert prices into your favorite prized items - see how many burritos that shirt really costs!",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://*.amazon.com/*",
+    "https://*.amazon.ca/*",
+    "https://*.amazon.co.uk/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.amazon.com/*",
+        "https://*.amazon.ca/*",
+        "https://*.amazon.co.uk/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "BurritoBuyer Settings"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

@@ -1,0 +1,19 @@
+/* BurritoBuyer Extension - Simple Clean Styles */
+
+.burrito-buyer-conversion {
+    display: block !important;
+    color: #000000 !important;
+    font-size: 14px !important;
+    font-weight: 300 !important;
+    margin-top: 4px !important;
+    opacity: 0.8 !important;
+    font-family: "Amazon Ember", Arial, sans-serif !important;
+    line-height: 1.2 !important;
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+}
+
+.burrito-buyer-conversion:hover {
+    opacity: 1 !important;
+}
